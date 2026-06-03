@@ -791,13 +791,24 @@ async function loadPortal(){
   }
 }
 
+// ── OPEN APP TILE ──
+async function openApp(url){
+  if(url === '#') return;
+  const {data} = await sb.auth.getSession();
+  const session = data?.session;
+  if(session?.access_token && session?.refresh_token){
+    url = url + '?token=' + session.access_token + '&refresh=' + session.refresh_token;
+  }
+  window.open(url, '_blank');
+}
+
 // ── RENDER APPS ──
 function renderApps(){
   const grid = document.getElementById('main-apps');
   const visibleApps = Object.entries(ALL_APPS).filter(([k,v]) => v.roles.includes(currentRole));
 
   grid.innerHTML = visibleApps.map(([key, app]) => `
-    <a class="app-card ${app.cardClass}" href="${app.url}" ${app.url !== '#' ? 'target="_blank"' : 'onclick="return false"'}>
+    <a class="app-card ${app.cardClass}" href="#" onclick="openApp('${app.url}');return false;">
       <div class="card-icon-wrap" style="background-image:url('${app.imgUrl}');"></div>
     </a>
   `).join('');
