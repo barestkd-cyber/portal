@@ -733,7 +733,7 @@ async function doSignup(){
   if(pw !== confirm){ err.textContent='Passwords do not match.'; err.style.display='block'; return; }
 
   // Check allowed_emails
-  const {data:allowed} = await sb.from('allowed_emails').select('email').eq('email',email).single();
+  const {data:allowed} = await sb.rpc('is_email_allowed', { check_email: email });
   if(!allowed){
     err.textContent = 'Your email is not on file with Bares TKD. Contact your instructor.';
     err.style.display = 'block';
