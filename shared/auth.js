@@ -166,7 +166,12 @@
   async function completePasswordReset(newPassword) {
     if (!newPassword || newPassword.length < 6) return { user: null, error: 'Password must be at least 6 characters.' };
     var res = await sb.auth.updateUser({ password: newPassword });
-    if (res.error) return { user: null, error: 'Error updating password. Please try again.' };
+    if (res.error) {
+      var msg = (res.error && res.error.message) || '';
+      // Supabase rejects reusing the current password; make that explicit.
+      if (/different from the old password/i.test(msg)) msg = 'Your new password must be different from your current password.';
+      return { user: null, error: msg || 'Error updating password. Please try again.' };
+    }
     var session = await getSession();
     _role = null;
     return { user: session ? session.user : null, error: null };
