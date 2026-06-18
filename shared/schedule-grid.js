@@ -123,13 +123,14 @@
     var isInteractive = opts.isInteractive || function () { return true; };
     var weekStart     = opts.weekStart;
     var canAssign     = opts.canAssign;
+    var pxPerMin      = opts.pxPerMin || PX_PER_MIN; // vertical scale; default = classplan's planner scale
 
     var grid = opts.container;
     grid.innerHTML = '';
     grid.classList.add('btkd-grid-root');
     grid.classList.toggle('is-light', opts.mode === 'light');
 
-    var totalH = Math.round(GRID_SPAN * PX_PER_MIN);
+    var totalH = Math.round(GRID_SPAN * pxPerMin);
 
     grid.style.display = 'flex';
     grid.style.alignItems = 'stretch';
@@ -147,7 +148,7 @@
       var h = dayMorningClasses.reduce(function (sum, t) { return sum + (t.duration || 45); }, 0);
       if (h > maxMorningH) maxMorningH = h;
     }
-    var morningStripH = hasMorning ? Math.round(maxMorningH * PX_PER_MIN) : 0;
+    var morningStripH = hasMorning ? Math.round(maxMorningH * pxPerMin) : 0;
 
     // ── TIME COLUMN ──
     var timeCol = document.createElement('div');
@@ -169,7 +170,7 @@
     TIME_LABELS.forEach(function (t) {
       var offsetMins = (t.h * 60 + t.m) - GRID_START;
       if (offsetMins < 0 || offsetMins > GRID_SPAN) return;
-      var top = Math.round(offsetMins * PX_PER_MIN);
+      var top = Math.round(offsetMins * pxPerMin);
       var lbl = document.createElement('div');
       lbl.style.cssText = 'position:absolute;top:' + top + 'px;left:0;right:0;font-family:\'Barlow Condensed\',sans-serif;font-size:9px;font-weight:700;letter-spacing:.04em;color:var(--muted);text-align:right;padding-right:4px;transform:translateY(1px);';
       lbl.textContent = t.label;
@@ -208,7 +209,7 @@
           var instructor = pd.instructor || tmpl.defaultInstructor;
           var status = pd.status;
           var isUnassigned = !instructor && status === 'none';
-          var pillH = Math.max(28, Math.round((tmpl.duration || 45) * PX_PER_MIN) - 2);
+          var pillH = Math.max(28, Math.round((tmpl.duration || 45) * pxPerMin) - 2);
           var pill = document.createElement('div');
           pill.className = 'class-cell status-' + status + (isUnassigned ? ' status-unassigned' : '');
           pill.style.cssText = 'position:absolute;top:' + stackTop + 'px;height:' + pillH + 'px;left:2px;right:2px;border-radius:3px;overflow:hidden;padding:4px 6px;display:flex;flex-direction:column;justify-content:flex-start;';
@@ -253,7 +254,7 @@
 
         var offsetMins = minsFromGridTop(tmpl.timeH, tmpl.timeM, isSatVal);
         if (offsetMins < 0) return;
-        var top = Math.round(offsetMins * PX_PER_MIN);
+        var top = Math.round(offsetMins * pxPerMin);
 
         var nextClass = dayClasses[idx + 1];
         var maxMins = tmpl.duration || 45;
@@ -261,7 +262,7 @@
           var nextOffset = minsFromGridTop(nextClass.timeH, nextClass.timeM, isSatVal);
           maxMins = Math.min(maxMins, nextOffset - offsetMins);
         }
-        var height = Math.max(28, Math.round(maxMins * PX_PER_MIN) - 2);
+        var height = Math.max(28, Math.round(maxMins * pxPerMin) - 2);
 
         var cell = document.createElement('div');
         cell.className = 'class-cell status-' + status + (isUnassigned ? ' status-unassigned' : '');
