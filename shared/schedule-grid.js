@@ -74,6 +74,7 @@
       '--bd-none:#3a3a42; --bd-draft:#3a3a42; --bd-unassigned:#33333a; --bd-sub:#d9b85a; --bd-rev:#2ed573; --bd-resub:#a060c0;',
       '--prog-red:#ff5a5a; --prog-cubs:#ff9f43; --prog-ampd:#2ed573; --prog-kick:#4aa3ff; --prog-leader:#efce6b;',
       '--red:#c0392b;',
+      '--text:#e8e8e8; --muted:#666;',
       '}',
       '.btkd-grid-root.is-light{',
       '--grid-line:#000000; --grid-muted:#7a828d; --grid-bg:#ffffff;',
@@ -81,6 +82,7 @@
       '--bd-none:#c4d0da; --bd-draft:#c4d0da; --bd-unassigned:#c4d0da; --bd-sub:#c9a53a; --bd-rev:#27ae60; --bd-resub:#8e44ad;',
       '--prog-red:#d62828; --prog-cubs:#e0701a; --prog-ampd:#1e9e54; --prog-kick:#2d7fd6; --prog-leader:#d4a216;',
       '--red:#b03020;',
+      '--text:#111111; --muted:#666666;',
       '}',
       // Grid rules — copied from classplan, each selector scoped to .btkd-grid-root.
       '.btkd-grid-root .sched-grid{display:grid;grid-template-columns:repeat(6,minmax(96px,1fr));min-width:576px;border-top:1px solid var(--grid-line);border-left:1px solid var(--grid-line);}',
@@ -287,4 +289,5 @@
   }
 
   window.BTKDGrid = { inject: inject, render: render };
+  window.BTKDGrid.getWeekStart = getWeekStart;
 })();
