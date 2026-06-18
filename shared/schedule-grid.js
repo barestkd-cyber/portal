@@ -211,7 +211,7 @@
           var isUnassigned = !instructor && status === 'none';
           var pillH = Math.max(28, Math.round((tmpl.duration || 45) * pxPerMin) - 2);
           var pill = document.createElement('div');
-          pill.className = 'class-cell status-' + status + (isUnassigned ? ' status-unassigned' : '');
+          pill.className = 'class-cell status-' + status + (isUnassigned ? ' status-unassigned' : '') + ((tmpl.duration || 45) <= 30 ? ' dur-short' : '');
           pill.style.cssText = 'position:absolute;top:' + stackTop + 'px;height:' + pillH + 'px;left:2px;right:2px;border-radius:3px;overflow:hidden;padding:4px 6px;display:flex;flex-direction:column;justify-content:flex-start;';
           var beltDiv = tmpl.belt ? '<div class="cell-belt ' + tmpl.progCss + '">' + tmpl.belt + '</div>' : '';
           var instrDiv = instructor
@@ -265,7 +265,7 @@
         var height = Math.max(28, Math.round(maxMins * pxPerMin) - 2);
 
         var cell = document.createElement('div');
-        cell.className = 'class-cell status-' + status + (isUnassigned ? ' status-unassigned' : '');
+        cell.className = 'class-cell status-' + status + (isUnassigned ? ' status-unassigned' : '') + ((tmpl.duration || 45) <= 30 ? ' dur-short' : '');
         cell.style.cssText = 'position:absolute;top:' + top + 'px;height:' + height + 'px;left:2px;right:2px;border-radius:3px;overflow:hidden;padding:4px 6px;display:flex;flex-direction:column;justify-content:flex-start;';
 
         var beltDiv = tmpl.belt ? '<div class="cell-belt ' + tmpl.progCss + '">' + tmpl.belt + '</div>' : '';
