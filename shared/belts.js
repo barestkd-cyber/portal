@@ -39,7 +39,7 @@ const BELTS = [
     cycleNote: null,
     stripes: {
       black: [
-        {
+        { id: 'white-belt--stripe-1-stances-commands',
           label: 'Stripe 1 — Stances & Commands',
           details: [
             { title: 'Stances', items: ['Attention Position', 'Ready Position', 'Front Stance', 'Back Stance', 'Sitting Stance'] },
@@ -53,20 +53,20 @@ const BELTS = [
             ]}
           ]
         },
-        {
+        { id: 'white-belt--stripe-2-hand-techniques',
           label: 'Stripe 2 — Hand Techniques',
           details: [
             { title: 'Techniques', items: ['Inner Forearm Block', 'Low Block', 'High Block', 'Knife Hand Strike'] }
           ]
         },
-        {
+        { id: 'white-belt--stripe-3-sparring-combinations',
           label: 'Stripe 3 — Sparring Combinations',
           details: [
             { title: 'Combo 1', items: ['Lead hand knife hand', '#1 Sidekick (front leg)', 'Reverse punch', '#2 Front kick (back leg)'] },
             { title: 'Combo 2', items: ['Front arm backfist', 'Reverse punch', '#2 Crescent kick', 'Back leg steps to front leg front kick (or skipping front kick)'] },
           ]
         },
-        {
+        { id: 'form',
           label: 'Stripe 4 — Ki-Bon (Form)',
           details: [
             { title: 'Form', items: ['Ki-Bon — see form section above'] }
@@ -74,8 +74,8 @@ const BELTS = [
         },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks', details: [{ title: 'Kicks', items: ['#1 Side Kick (front leg)', '#1 Front Kick (front leg)', '#2 Front Kick (back leg)', '#1 Round Kick (front leg)', '#2 Round Kick (back leg)', 'Inside Crescent Kick', 'Outside Crescent Kick'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',  details: [{ title: 'Rotating', items: ['Self defense curriculum rotates with the current cycle'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks', details: [{ title: 'Kicks', items: ['#1 Side Kick (front leg)', '#1 Front Kick (front leg)', '#2 Front Kick (back leg)', '#1 Round Kick (front leg)', '#2 Round Kick (back leg)', 'Inside Crescent Kick', 'Outside Crescent Kick'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',  details: [{ title: 'Rotating', items: ['Self defense curriculum rotates with the current cycle'] }] },
       ]
     },
   },
@@ -85,29 +85,29 @@ const BELTS = [
     name: 'Yellow Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — Hand Techniques', details: [
+        { id: 'yellow-belt--stripe-1-hand-techniques', label: 'Stripe 1 — Hand Techniques', details: [
           { title: 'Dan-Gun Cycle', items: ['Double knifehand block', 'Square block', 'Outer forearm block', 'Outside block', 'Ridgehand', 'Palm heel'] },
           { title: 'Do-San Cycle', items: ['Outer forearm block', 'Double knifehand block', 'Spearhand', 'Spin backfist', 'Twin outer forearm block', 'Ridgehand', 'Palm heel'] }
         ]},
-        { label: 'Stripe 2 — Kicks', details: [
+        { id: 'kicks', label: 'Stripe 2 — Kicks', details: [
           { title: 'Dan-Gun Cycle', items: ['Front kick/round kick combo', 'Spin side kick', 'Spin crescent kick'] },
           { title: 'Do-San Cycle', items: ['#3 Front kick', '#3 Side kick', '#3 Round kick', '#2 Hook kick'] }
         ]},
-        { label: 'Stripe 3 — Sparring Combos', details: [
+        { id: 'sparring-combo', label: 'Stripe 3 — Sparring Combos', details: [
           { title: 'Dan-Gun Combo 1', items: ['Outer forearm block', 'Reverse ridgehand', '#2 Round kick', 'Spin side kick'] },
           { title: 'Dan-Gun Combo 2', items: ['Outside block', 'Reverse punch', 'Hook punch', '#1 Side kick', 'Spin crescent kick'] },
           { title: 'Do-San Combo 1', items: ['#3 Side kick', 'Lead backfist', 'Reverse punch', '#2 Hook kick'] },
           { title: 'Do-San Combo 2', items: ['#3 Round kick', '#2 Front kick/round kick combo', 'Reverse hook punch (#4)', 'Lead uppercut (#5)'] }
         ]},
-        { label: 'Stripe 4 — Form', details: [
+        { id: 'form', label: 'Stripe 4 — Form', details: [
           { title: 'Dan-Gun Cycle', items: ['Dan-Gun (21 movements)'] },
           { title: 'Do-San Cycle', items: ['Do-San (24 movements)'] }
         ]},
       ],
       colored: [
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
       ]
     },
     color: BELT_COLORS['Yellow'],
@@ -125,29 +125,29 @@ const BELTS = [
     name: 'Senior Yellow Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — Hand Techniques', details: [
+        { id: 'senior-yellow-belt--stripe-1-hand-techniques', label: 'Stripe 1 — Hand Techniques', details: [
           { title: 'Dan-Gun Cycle', items: ['Double knifehand block', 'Square block', 'Outer forearm block', 'Outside block', 'Ridgehand', 'Palm heel'] },
           { title: 'Do-San Cycle', items: ['Outer forearm block', 'Double knifehand block', 'Spearhand', 'Spin backfist', 'Twin outer forearm block', 'Ridgehand', 'Palm heel'] }
         ]},
-        { label: 'Stripe 2 — Kicks', details: [
+        { id: 'kicks', label: 'Stripe 2 — Kicks', details: [
           { title: 'Dan-Gun Cycle', items: ['Front kick/round kick combo', 'Spin side kick', 'Spin crescent kick', 'Slide side kick', 'Skip round kick', '#2 Jump round kick'] },
           { title: 'Do-San Cycle', items: ['#3 Front kick', '#3 Side kick', '#3 Round kick', '#2 Hook kick', 'Slide side kick', 'Skip round kick', '#2 Jump round kick'] }
         ]},
-        { label: 'Stripe 3 — Sparring Combos', details: [
+        { id: 'sparring-combo', label: 'Stripe 3 — Sparring Combos', details: [
           { title: 'Dan-Gun Combo 1', items: ['Outer forearm block', 'Reverse ridgehand', '#2 Round kick', 'Spin side kick'] },
           { title: 'Dan-Gun Combo 2', items: ['Outside block', 'Reverse punch', 'Hook punch', '#1 Side kick', 'Spin crescent kick'] },
           { title: 'Do-San Combo 1', items: ['#3 Side kick', 'Lead backfist', 'Reverse punch', '#2 Hook kick'] },
           { title: 'Do-San Combo 2', items: ['#3 Round kick', '#2 Front kick/round kick combo', 'Reverse hook punch (#4)', 'Lead uppercut (#5)'] }
         ]},
-        { label: 'Stripe 4 — Form', details: [
+        { id: 'form', label: 'Stripe 4 — Form', details: [
           { title: 'Dan-Gun Cycle', items: ['Dan-Gun (21 movements)'] },
           { title: 'Do-San Cycle', items: ['Do-San (24 movements)'] }
         ]},
       ],
       colored: [
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
       ]
     },
     color: BELT_COLORS['Senior Yellow'],
@@ -165,29 +165,29 @@ const BELTS = [
     name: 'Orange Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — Hand Techniques', details: [
+        { id: 'orange-belt--stripe-1-hand-techniques', label: 'Stripe 1 — Hand Techniques', details: [
           { title: 'Dan-Gun Cycle', items: ['Double knifehand block', 'Square block', 'Outer forearm block', 'Outside block', 'Ridgehand', 'Palm heel'] },
           { title: 'Do-San Cycle', items: ['Outer forearm block', 'Double knifehand block', 'Spearhand', 'Spin backfist', 'Twin outer forearm block', 'Ridgehand', 'Palm heel'] }
         ]},
-        { label: 'Stripe 2 — Kicks', details: [
+        { id: 'kicks', label: 'Stripe 2 — Kicks', details: [
           { title: 'Dan-Gun Cycle', items: ['Front kick/round kick combo', 'Spin side kick', 'Spin crescent kick', 'Slide side kick', 'Skip round kick', '#2 Jump round kick'] },
           { title: 'Do-San Cycle', items: ['#3 Front kick', '#3 Side kick', '#3 Round kick', '#2 Hook kick', 'Slide side kick', 'Skip round kick', '#2 Jump round kick'] }
         ]},
-        { label: 'Stripe 3 — Sparring Combos', details: [
+        { id: 'sparring-combo', label: 'Stripe 3 — Sparring Combos', details: [
           { title: 'Dan-Gun Combo 1', items: ['Outer forearm block', 'Reverse ridgehand', '#2 Round kick', 'Spin side kick'] },
           { title: 'Dan-Gun Combo 2', items: ['Outside block', 'Reverse punch', 'Hook punch', '#1 Side kick', 'Spin crescent kick'] },
           { title: 'Do-San Combo 1', items: ['#3 Side kick', 'Lead backfist', 'Reverse punch', '#2 Hook kick'] },
           { title: 'Do-San Combo 2', items: ['#3 Round kick', '#2 Front kick/round kick combo', 'Reverse hook punch (#4)', 'Lead uppercut (#5)'] }
         ]},
-        { label: 'Stripe 4 — Form', details: [
+        { id: 'form', label: 'Stripe 4 — Form', details: [
           { title: 'Dan-Gun Cycle', items: ['Dan-Gun (21 movements)'] },
           { title: 'Do-San Cycle', items: ['Do-San (24 movements)'] }
         ]},
       ],
       colored: [
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
       ]
     },
     color: BELT_COLORS['Orange'],
@@ -205,29 +205,29 @@ const BELTS = [
     name: 'Senior Orange Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — Hand Techniques', details: [
+        { id: 'senior-orange-belt--stripe-1-hand-techniques', label: 'Stripe 1 — Hand Techniques', details: [
           { title: 'Dan-Gun Cycle', items: ['Double knifehand block', 'Square block', 'Outer forearm block', 'Outside block', 'Ridgehand', 'Palm heel'] },
           { title: 'Do-San Cycle', items: ['Outer forearm block', 'Double knifehand block', 'Spearhand', 'Spin backfist', 'Twin outer forearm block', 'Ridgehand', 'Palm heel'] }
         ]},
-        { label: 'Stripe 2 — Kicks', details: [
+        { id: 'kicks', label: 'Stripe 2 — Kicks', details: [
           { title: 'Dan-Gun Cycle', items: ['Front kick/round kick combo', 'Spin side kick', 'Spin crescent kick', 'Slide side kick', 'Skip round kick', '#2 Jump round kick'] },
           { title: 'Do-San Cycle', items: ['#3 Front kick', '#3 Side kick', '#3 Round kick', '#2 Hook kick', 'Slide side kick', 'Skip round kick', '#2 Jump round kick'] }
         ]},
-        { label: 'Stripe 3 — Sparring Combos', details: [
+        { id: 'sparring-combo', label: 'Stripe 3 — Sparring Combos', details: [
           { title: 'Dan-Gun Combo 1', items: ['Outer forearm block', 'Reverse ridgehand', '#2 Round kick', 'Spin side kick'] },
           { title: 'Dan-Gun Combo 2', items: ['Outside block', 'Reverse punch', 'Hook punch', '#1 Side kick', 'Spin crescent kick'] },
           { title: 'Do-San Combo 1', items: ['#3 Side kick', 'Lead backfist', 'Reverse punch', '#2 Hook kick'] },
           { title: 'Do-San Combo 2', items: ['#3 Round kick', '#2 Front kick/round kick combo', 'Reverse hook punch (#4)', 'Lead uppercut (#5)'] }
         ]},
-        { label: 'Stripe 4 — Form', details: [
+        { id: 'form', label: 'Stripe 4 — Form', details: [
           { title: 'Dan-Gun Cycle', items: ['Dan-Gun (21 movements)'] },
           { title: 'Do-San Cycle', items: ['Do-San (24 movements)'] }
         ]},
       ],
       colored: [
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',    rotate: true,  details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',  rotate: true,  details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',   rotate: true,  details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
       ]
     },
     color: BELT_COLORS['Senior Orange'],
@@ -246,16 +246,16 @@ const BELTS = [
     name: 'Green Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
       ]
     },
     color: BELT_COLORS['Green'],
@@ -274,16 +274,16 @@ const BELTS = [
     name: 'Senior Green Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
       ]
     },
     color: BELT_COLORS['Senior Green'],
@@ -302,16 +302,16 @@ const BELTS = [
     name: 'Purple Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
       ]
     },
     color: BELT_COLORS['Purple'],
@@ -330,16 +330,16 @@ const BELTS = [
     name: 'Senior Purple Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
       ]
     },
     color: BELT_COLORS['Senior Purple'],
@@ -358,16 +358,16 @@ const BELTS = [
     name: 'Blue Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
       ]
     },
     color: BELT_COLORS['Blue'],
@@ -386,16 +386,16 @@ const BELTS = [
     name: 'Senior Blue Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
       ]
     },
     color: BELT_COLORS['Senior Blue'],
@@ -415,17 +415,17 @@ const BELTS = [
     name: 'Brown Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['Brown'],
@@ -443,17 +443,17 @@ const BELTS = [
     name: 'Senior Brown Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['Senior Brown'],
@@ -471,17 +471,17 @@ const BELTS = [
     name: 'Red Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['Red'],
@@ -499,17 +499,17 @@ const BELTS = [
     name: 'Senior Red Belt',
     stripes: {
       black: [
-        { color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
-        { color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'form', color: '#111',  label: 'Black Stripe — Form',        details: [{ title: 'Form', items: ['See rotating schedule above'] }] },
+        { id: 'one-step-1', color: '#888',  label: 'Gray Stripe — One Step #1',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
+        { id: 'one-step-2', color: '#888',  label: 'Gray Stripe — One Step #2',  details: [{ title: 'One Step', items: ['One step combination content — add here'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['Senior Red'],
@@ -530,16 +530,16 @@ const BELTS = [
     name: 'Probationary Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['Probationary Black'],
@@ -554,16 +554,16 @@ const BELTS = [
     name: 'Recommended Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['Recommended Black'],
@@ -578,16 +578,16 @@ const BELTS = [
     name: '1st Degree Decided Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -602,16 +602,16 @@ const BELTS = [
     name: '1st Degree Decided Level 2',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -625,16 +625,16 @@ const BELTS = [
     name: '1st Degree Senior Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -648,16 +648,16 @@ const BELTS = [
     name: '1st Degree Senior Level 2',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -671,16 +671,16 @@ const BELTS = [
     name: '2nd Degree Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -694,16 +694,16 @@ const BELTS = [
     name: '2nd Degree Black Belt Level 2',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -717,16 +717,16 @@ const BELTS = [
     name: '2nd Degree Decided Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -740,16 +740,16 @@ const BELTS = [
     name: '2nd Degree Decided Black Belt Level 2',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -763,16 +763,16 @@ const BELTS = [
     name: '2nd Degree Senior Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -786,16 +786,16 @@ const BELTS = [
     name: '2nd Degree Senior Black Belt Level 2',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -809,16 +809,16 @@ const BELTS = [
     name: '3rd Degree Black Belt',
     stripes: {
       black: [
-        { label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
-        { label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
+        { id: 'new-techniques', label: 'Stripe 1 — New Techniques',      details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },
+        { id: 'form', label: 'Stripe 2 — Form',                 details: [{ title: 'Form', items: ['See form section above'] }] },
       ],
       colored: [
-        { color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
-        { color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
-        { color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
-        { color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
-        { color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
-        { color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
+        { id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks',              rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },
+        { id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense',         rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },
+        { id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo',       rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },
+        { id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo',        rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },
+        { id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo',     rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },
+        { id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking',     rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] },
       ]
     },
     color: BELT_COLORS['1st Degree'],
@@ -830,7 +830,7 @@ const BELTS = [
   {
     group: 'Black Belt',
     name: '3rd Degree Decided Black Belt',
-    stripes: { black: [{ label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
+    stripes: { black: [{ id: 'new-techniques', label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ id: 'form', label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
     color: BELT_COLORS['1st Degree'], meta: '1 year at rank',
     tags: [{label:'Juche',type:'form'}],
     forms: [{name:'Juche', meaning:'(45 movements) — Meaning coming soon.', korean:'주체', note:''}],
@@ -839,7 +839,7 @@ const BELTS = [
   {
     group: 'Black Belt',
     name: '3rd Degree Senior Black Belt',
-    stripes: { black: [{ label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
+    stripes: { black: [{ id: 'new-techniques', label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ id: 'form', label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
     color: BELT_COLORS['1st Degree'], meta: '1 year at rank',
     tags: [{label:'Ko-Dang',type:'form'}],
     forms: [{name:'Ko-Dang', meaning:'(55 movements) — The pseudonym of patriot Cho Man Ik, who dedicated his life to the independence and education of Korea.', korean:'고당', note:''}],
@@ -848,7 +848,7 @@ const BELTS = [
   {
     group: 'Black Belt',
     name: '4th Degree Black Belt',
-    stripes: { black: [{ label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
+    stripes: { black: [{ id: 'new-techniques', label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ id: 'form', label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
     color: BELT_COLORS['1st Degree'], meta: '2 years at rank',
     tags: [{label:'Choi-Yong',type:'form'}],
     forms: [{name:'Choi-Yong', meaning:'(movements coming soon) — Named after General Choi Yong (1316–1388), Premier and Commander-in-Chief of the Koryo Dynasty, known for his loyalty and incorruptibility.', korean:'최용', note:''}],
@@ -857,7 +857,7 @@ const BELTS = [
   {
     group: 'Black Belt',
     name: '4th Degree Senior Black Belt',
-    stripes: { black: [{ label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
+    stripes: { black: [{ id: 'new-techniques', label: 'Stripe 1 — New Techniques', details: [{ title: 'Techniques', items: ['Add techniques for this rank here'] }] },{ id: 'form', label: 'Stripe 2 — Form', details: [{ title: 'Form', items: ['See form section above'] }] }], colored: [{ id: 'kicks', color: '#2a6fdb', label: 'Blue Stripe — Kicks', rotate: true, details: [{ title: 'Current Rotation — Do-San / Yul-Guk / Choong-Moo', items: ['Kick content — add for current rotation'] }] },{ id: 'self-defense', color: '#c8102e', label: 'Red Stripe — Self Defense', rotate: true, details: [{ title: 'Current Cycle', items: ['Block incoming punch', 'Parry to grab', 'Under the shoulder grab'] }] },{ id: 'power-combo', color: '#8b3fa8', label: 'Purple Stripe — Power Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Skipping roundhouse', 'Reverse punch (#2)', 'Roundhouse'] }] },{ id: 'mitt-combo', color: '#f5830a', label: 'Orange Stripe — Mitt Combo', rotate: true, details: [{ title: 'Current Cycle', items: ['Jab', 'Slip (#1 slip #3) — slip to left side', 'Hook punch'] }] },{ id: 'sparring-combo', color: '#3a9e3a', label: 'Green Stripe — Sparring Combo', rotate: true, details: [{ title: 'Current Cycle — Green Belt & Above', items: ['#1 Slide sidekick', 'Hand fake', '#2 Front kick', 'Spin sidekick', 'Feint spin kick', '#1 Hook or step behind hook'] }] },{ id: 'board-breaking', color: '#7a4e1e', label: 'Brown Stripe — Board Breaking', rotate: true, details: [{ title: 'Board Breaking — see Boards tab', items: ['Board breaking requirements listed in the 🪵 Boards tab'] }] }] },
     color: BELT_COLORS['1st Degree'], meta: '2 years at rank',
     tags: [{label:'Tong-Il',type:'form'}],
     forms: [{name:'Tong-Il', meaning:'(67 movements) — Denotes the hope for the reunification of Korea, divided since 1945. The diagram symbolizes people being as one.', korean:'통일', note:''}],
