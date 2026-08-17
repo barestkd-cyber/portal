@@ -1,4 +1,4 @@
-/* BaresTKD — Shared Authentication Module
+/* BaresTKD - Shared Authentication Module
  * ---------------------------------------------------------------------------
  * One canonical copy of the auth logic that was duplicated across the five
  * apps (portal, curriculum, classplan, testing, leadership-signup): the
@@ -24,7 +24,7 @@
  *     if (session) { showApp(); } else { showLogin(); }
  *   }
  *
- * Every method returns plain data — no DOM assumptions — so each app keeps
+ * Every method returns plain data - no DOM assumptions - so each app keeps
  * wiring its own screens, buttons, and error elements.
  * ---------------------------------------------------------------------------
  */
@@ -113,7 +113,7 @@
 
     // The profiles row is created automatically by a DB trigger. This upsert is
     // a best-effort attempt to also persist the display name and is intentionally
-    // non-fatal — under RLS Phase 1 profile writes are reserved to staff, so for
+    // non-fatal - under RLS Phase 1 profile writes are reserved to staff, so for
     // a brand-new student this is a silent no-op and the trigger is authoritative.
     try { await sb.from('profiles').upsert({ id: res.data.user.id, email: email, name: name, role: 'student' }); } catch (e) {}
 
@@ -193,12 +193,81 @@
     return true;
   }
 
+  // ── Idle logout ──────────────────────────────────────────────────────────
+  // autoRefreshToken + persistSession means a session renews forever, so a
+  // device left signed in stays signed in. That is fine for a parent on their
+  // own phone and wrong for a staff tablet at the front desk, which can see
+  // every contact and (since 2026-08-16) charge a card. So this is OPT-IN:
+  // an app asks for it, the portal does not get it by surprise.
+  //
+  // Last-activity lives in localStorage so all tabs and all barestkd.fit apps
+  // share one clock: typing in the CRM keeps Class Plan alive in the next tab,
+  // and walking away expires both.
+  var IDLE_KEY = 'barestkd-last-activity';
+  var _idleTimer = null;
+
+  function markActivity() {
+    try { localStorage.setItem(IDLE_KEY, String(Date.now())); } catch (e) {}
+  }
+
+  function idleLogout(opts) {
+    opts = opts || {};
+    var minutes = Number(opts.minutes) || 30;
+    var warnSeconds = Number(opts.warnSeconds) || 60;
+    var onWarn = typeof opts.onWarn === 'function' ? opts.onWarn : null;
+    var onLogout = typeof opts.onLogout === 'function' ? opts.onLogout : null;
+    var limitMs = minutes * 60000;
+    var warned = false;
+
+    if (_idleTimer) clearInterval(_idleTimer);
+    markActivity();
+
+    // Real interaction only. mousemove would keep a device alive just because
+    // a cat walked past it, which defeats the point.
+    var events = ['pointerdown', 'keydown', 'touchstart', 'focus'];
+    var lastWrite = 0;
+    function bump() {
+      var now = Date.now();
+      if (now - lastWrite < 5000) return;   // throttle: this writes to storage
+      lastWrite = now;
+      warned = false;
+      markActivity();
+    }
+    events.forEach(function (e) { window.addEventListener(e, bump, true); });
+
+    _idleTimer = setInterval(async function () {
+      var session = null;
+      try { session = await getSession(); } catch (e) {}
+      if (!session) return;                  // already signed out; nothing to do
+
+      var last = 0;
+      try { last = Number(localStorage.getItem(IDLE_KEY)) || 0; } catch (e) {}
+      if (!last) { markActivity(); return; }
+      var idleMs = Date.now() - last;
+
+      if (idleMs >= limitMs) {
+        clearInterval(_idleTimer);
+        try { localStorage.removeItem(IDLE_KEY); } catch (e) {}
+        await signOut();
+        if (onLogout) onLogout();
+        else location.reload();
+        return;
+      }
+      if (!warned && onWarn && idleMs >= limitMs - warnSeconds * 1000) {
+        warned = true;
+        onWarn(Math.max(1, Math.round((limitMs - idleMs) / 1000)));
+      }
+    }, 15000);
+  }
+
   // ── Public surface ───────────────────────────────────────────────────────
   window.BTKD = {
     sb: sb,
     signIn: signIn,
     signUp: signUp,
     signOut: signOut,
+    idleLogout: idleLogout,
+    markActivity: markActivity,
     getSession: getSession,
     getMyRole: getMyRole,
     initResetHandler: initResetHandler,
