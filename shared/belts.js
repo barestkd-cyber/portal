@@ -4671,6 +4671,52 @@ const BELTS = [
   }
 ];
 
+/* ── current curriculum for a stripe ────────────────────────────────────
+ * Spec sections 7 and 9: a stripe keeps a permanent identity while its
+ * CONTENT rotates. Blue always means Kicks; which kicks depends on the
+ * rotation. So content is resolved at read time:
+ *
+ *   rot 'cycle' - the school-wide row for the active 10-week cycle
+ *   rot 'form'  - the row travelling with this belt's form, so when a form
+ *                  comes back around its material comes back with it
+ *   rot 'fixed' - stances, blocks, board breaking: straight off the belt
+ *
+ * Anything with no row falls back to the catalogue text, so this fills in
+ * gradually rather than all at once, and a database that is unreachable
+ * shows the old content instead of an empty page.
+ */
+var _curriculumCache = null;
+async function loadCurriculum(sb){
+  if (_curriculumCache) return _curriculumCache;
+  var out = { cycle: {}, form: {} };
+  try {
+    var act = await sb.from('cycle_data').select('id').eq('is_active', true).limit(1).maybeSingle();
+    var rows = await sb.from('cycle_curriculum').select('category,scope,cycle_id,form_name,content');
+    (rows.data || []).forEach(function (r) {
+      if (r.scope === 'cycle') {
+        if (act.data && r.cycle_id === act.data.id) out.cycle[r.category] = r.content;
+      } else if (r.form_name) {
+        out.form[r.category + '||' + r.form_name] = r.content;
+      }
+    });
+  } catch (e) { /* offline: the catalogue still has content */ }
+  _curriculumCache = out;
+  return out;
+}
+
+/* beltForm is the form this belt is currently training, normally
+   belt.forms[0].name. */
+function stripeContent(stripe, beltForm, cache) {
+  if (cache) {
+    if (stripe.rot === 'cycle' && cache.cycle[stripe.cat]) return cache.cycle[stripe.cat];
+    if (stripe.rot === 'form' && beltForm) {
+      var hit = cache.form[stripe.cat + '||' + beltForm];
+      if (hit) return hit;
+    }
+  }
+  return stripe.details || [];
+}
+
 function getStripeId(stripe, beltName){
   if (stripe && stripe.id) return stripe.id;           // explicit override always wins
   var L = ((stripe && stripe.label) || '').toLowerCase();
@@ -4710,4 +4756,6 @@ function stripeCatalog(){
 window.BELT_COLORS = BELT_COLORS;
 window.BELTS = BELTS;
 window.getStripeId = getStripeId;
+window.loadCurriculum = loadCurriculum;
+window.stripeContent = stripeContent;
 window.stripeCatalog = stripeCatalog;
