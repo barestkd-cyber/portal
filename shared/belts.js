@@ -2337,6 +2337,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -2470,6 +2485,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -2596,6 +2626,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -2728,6 +2773,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -2857,6 +2917,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -2983,6 +3058,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -3116,6 +3206,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -3243,6 +3348,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -3375,6 +3495,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -3501,6 +3636,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -3633,6 +3783,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -3759,6 +3924,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -3891,6 +4071,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -4017,6 +4212,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -4149,6 +4359,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -4275,6 +4500,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
@@ -4407,6 +4647,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -4536,6 +4791,21 @@ const BELTS = [
               ]
             }
           ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
         }
       ]
     }
@@ -4662,6 +4932,21 @@ const BELTS = [
                 "Jab",
                 "Slip (#1 slip #3) — slip to left side",
                 "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
               ]
             }
           ]
