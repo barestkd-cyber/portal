@@ -28,4934 +28,4938 @@ const BELT_COLORS = {
      optional - true where a rank may test without it
    The five patterns live in one place on purpose: this file used to
    hand-write 254 stripes, and they had drifted apart belt by belt. */
-const BELTS = [
-  {
-    "group": "Beginner",
-    "name": "White Belt",
-    "color": "#f0f0f0",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Ki-Bon",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Ki-Bon",
-        "korean": "기본",
-        "note": "(14 movements) — \"The Basics.\" The foundation form every student learns first.",
-        "youtubeUrl": "https://youtu.be/mOiB-10NcHM"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "white",
-    "stripes": {
-      "black": [
-        {
-          "id": "stances",
-          "cat": "stances",
-          "label": "Stripe 1 — Stances & Commands",
-          "color": "#1c1c1c",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Stances",
-              "items": [
-                "Attention Position",
-                "Ready Position",
-                "Front Stance",
-                "Back Stance",
-                "Sitting Stance"
-              ]
-            },
-            {
-              "title": "Commands",
-              "items": [
-                "Charyot (차렷) — Attention, go to attention position",
-                "Kyungye (경례) — Bow",
-                "Joonbi (준비) — Ready, go from attention to ready position",
-                "Bahrroh (바로) — Back to ready, return from stance to ready position",
-                "Shiop (쉬어) — Rest, left foot returns from ready to attention",
-                "Sijak (시작) — Go / Begin"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "blocks",
-          "cat": "blocks",
-          "label": "Stripe 2 — Blocks",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 3 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 4 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "Ki-Bon — see form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Kicks",
-              "items": [
-                "#1 Side Kick (front leg)",
-                "#1 Front Kick (front leg)",
-                "#2 Front Kick (back leg)",
-                "#1 Round Kick (front leg)",
-                "#2 Round Kick (back leg)",
-                "Inside Crescent Kick",
-                "Outside Crescent Kick"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "form"
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Rotating",
-              "items": [
-                "Self defense curriculum rotates with the current cycle"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "optional": true
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "optional": true
-        }
-      ]
-    }
-  },
-  {
-    "group": "Beginner",
-    "name": "Yellow Belt",
-    "color": "#f5c518",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Dan-Gun / Do-San",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Dan-Gun",
-        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
-        "korean": "단군",
-        "note": ""
-      },
-      {
-        "name": "Do-San",
-        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
-        "korean": "도산",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "beginner",
-    "stripes": {
-      "black": [
-        {
-          "id": "stances",
-          "cat": "stances",
-          "label": "Stripe 1 — Stances & Turns",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "blocks",
-          "cat": "blocks",
-          "label": "Stripe 2 — Blocks",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 3 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 4 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Dan-Gun (21 movements)"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "Do-San (24 movements)"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Front kick/round kick combo",
-                "Spin side kick",
-                "Spin crescent kick"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "#3 Front kick",
-                "#3 Side kick",
-                "#3 Round kick",
-                "#2 Hook kick"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Combo 1",
-              "items": [
-                "Outer forearm block",
-                "Reverse ridgehand",
-                "#2 Round kick",
-                "Spin side kick"
-              ]
-            },
-            {
-              "title": "Dan-Gun Combo 2",
-              "items": [
-                "Outside block",
-                "Reverse punch",
-                "Hook punch",
-                "#1 Side kick",
-                "Spin crescent kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 1",
-              "items": [
-                "#3 Side kick",
-                "Lead backfist",
-                "Reverse punch",
-                "#2 Hook kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 2",
-              "items": [
-                "#3 Round kick",
-                "#2 Front kick/round kick combo",
-                "Reverse hook punch (#4)",
-                "Lead uppercut (#5)"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Beginner",
-    "name": "Senior Yellow Belt",
-    "color": "#f5c518",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Dan-Gun / Do-San",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Dan-Gun",
-        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
-        "korean": "단군",
-        "note": ""
-      },
-      {
-        "name": "Do-San",
-        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
-        "korean": "도산",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "beginner",
-    "stripes": {
-      "black": [
-        {
-          "id": "stances",
-          "cat": "stances",
-          "label": "Stripe 1 — Stances & Turns",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "blocks",
-          "cat": "blocks",
-          "label": "Stripe 2 — Blocks",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 3 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 4 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Dan-Gun (21 movements)"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "Do-San (24 movements)"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Front kick/round kick combo",
-                "Spin side kick",
-                "Spin crescent kick",
-                "Slide side kick",
-                "Skip round kick",
-                "#2 Jump round kick"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "#3 Front kick",
-                "#3 Side kick",
-                "#3 Round kick",
-                "#2 Hook kick",
-                "Slide side kick",
-                "Skip round kick",
-                "#2 Jump round kick"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Combo 1",
-              "items": [
-                "Outer forearm block",
-                "Reverse ridgehand",
-                "#2 Round kick",
-                "Spin side kick"
-              ]
-            },
-            {
-              "title": "Dan-Gun Combo 2",
-              "items": [
-                "Outside block",
-                "Reverse punch",
-                "Hook punch",
-                "#1 Side kick",
-                "Spin crescent kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 1",
-              "items": [
-                "#3 Side kick",
-                "Lead backfist",
-                "Reverse punch",
-                "#2 Hook kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 2",
-              "items": [
-                "#3 Round kick",
-                "#2 Front kick/round kick combo",
-                "Reverse hook punch (#4)",
-                "Lead uppercut (#5)"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Beginner",
-    "name": "Orange Belt",
-    "color": "#f5830a",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Dan-Gun / Do-San",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Dan-Gun",
-        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
-        "korean": "단군",
-        "note": ""
-      },
-      {
-        "name": "Do-San",
-        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
-        "korean": "도산",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "beginner",
-    "stripes": {
-      "black": [
-        {
-          "id": "stances",
-          "cat": "stances",
-          "label": "Stripe 1 — Stances & Turns",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "blocks",
-          "cat": "blocks",
-          "label": "Stripe 2 — Blocks",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 3 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 4 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Dan-Gun (21 movements)"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "Do-San (24 movements)"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Front kick/round kick combo",
-                "Spin side kick",
-                "Spin crescent kick",
-                "Slide side kick",
-                "Skip round kick",
-                "#2 Jump round kick"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "#3 Front kick",
-                "#3 Side kick",
-                "#3 Round kick",
-                "#2 Hook kick",
-                "Slide side kick",
-                "Skip round kick",
-                "#2 Jump round kick"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Combo 1",
-              "items": [
-                "Outer forearm block",
-                "Reverse ridgehand",
-                "#2 Round kick",
-                "Spin side kick"
-              ]
-            },
-            {
-              "title": "Dan-Gun Combo 2",
-              "items": [
-                "Outside block",
-                "Reverse punch",
-                "Hook punch",
-                "#1 Side kick",
-                "Spin crescent kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 1",
-              "items": [
-                "#3 Side kick",
-                "Lead backfist",
-                "Reverse punch",
-                "#2 Hook kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 2",
-              "items": [
-                "#3 Round kick",
-                "#2 Front kick/round kick combo",
-                "Reverse hook punch (#4)",
-                "Lead uppercut (#5)"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Beginner",
-    "name": "Senior Orange Belt",
-    "color": "#f5830a",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Dan-Gun / Do-San",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Dan-Gun",
-        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
-        "korean": "단군",
-        "note": ""
-      },
-      {
-        "name": "Do-San",
-        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
-        "korean": "도산",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "beginner",
-    "stripes": {
-      "black": [
-        {
-          "id": "stances",
-          "cat": "stances",
-          "label": "Stripe 1 — Stances & Turns",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "blocks",
-          "cat": "blocks",
-          "label": "Stripe 2 — Blocks",
-          "color": "#1c1c1c",
-          "rot": "fixed"
-        },
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 3 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 4 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Dan-Gun (21 movements)"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "Do-San (24 movements)"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Cycle",
-              "items": [
-                "Front kick/round kick combo",
-                "Spin side kick",
-                "Spin crescent kick",
-                "Slide side kick",
-                "Skip round kick",
-                "#2 Jump round kick"
-              ]
-            },
-            {
-              "title": "Do-San Cycle",
-              "items": [
-                "#3 Front kick",
-                "#3 Side kick",
-                "#3 Round kick",
-                "#2 Hook kick",
-                "Slide side kick",
-                "Skip round kick",
-                "#2 Jump round kick"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Dan-Gun Combo 1",
-              "items": [
-                "Outer forearm block",
-                "Reverse ridgehand",
-                "#2 Round kick",
-                "Spin side kick"
-              ]
-            },
-            {
-              "title": "Dan-Gun Combo 2",
-              "items": [
-                "Outside block",
-                "Reverse punch",
-                "Hook punch",
-                "#1 Side kick",
-                "Spin crescent kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 1",
-              "items": [
-                "#3 Side kick",
-                "Lead backfist",
-                "Reverse punch",
-                "#2 Hook kick"
-              ]
-            },
-            {
-              "title": "Do-San Combo 2",
-              "items": [
-                "#3 Round kick",
-                "#2 Front kick/round kick combo",
-                "Reverse hook punch (#4)",
-                "Lead uppercut (#5)"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Intermediate",
-    "name": "Green Belt",
-    "color": "#3a9e3a",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Jun-Gun",
-        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
-        "korean": "준군",
-        "note": ""
-      },
-      {
-        "name": "Yul-Guk",
-        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
-        "korean": "율곡",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
-      },
-      {
-        "name": "Won-Hyo",
-        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
-        "korean": "원효",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Intermediate",
-    "name": "Senior Green Belt",
-    "color": "#3a9e3a",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Jun-Gun",
-        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
-        "korean": "준군",
-        "note": ""
-      },
-      {
-        "name": "Yul-Guk",
-        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
-        "korean": "율곡",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
-      },
-      {
-        "name": "Won-Hyo",
-        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
-        "korean": "원효",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Intermediate",
-    "name": "Purple Belt",
-    "color": "#8b3fa8",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Jun-Gun",
-        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
-        "korean": "준군",
-        "note": ""
-      },
-      {
-        "name": "Yul-Guk",
-        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
-        "korean": "율곡",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
-      },
-      {
-        "name": "Won-Hyo",
-        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
-        "korean": "원효",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Intermediate",
-    "name": "Senior Purple Belt",
-    "color": "#8b3fa8",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Jun-Gun",
-        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
-        "korean": "준군",
-        "note": ""
-      },
-      {
-        "name": "Yul-Guk",
-        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
-        "korean": "율곡",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
-      },
-      {
-        "name": "Won-Hyo",
-        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
-        "korean": "원효",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Intermediate",
-    "name": "Blue Belt",
-    "color": "#2a6fdb",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Jun-Gun",
-        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
-        "korean": "준군",
-        "note": ""
-      },
-      {
-        "name": "Yul-Guk",
-        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
-        "korean": "율곡",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
-      },
-      {
-        "name": "Won-Hyo",
-        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
-        "korean": "원효",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Intermediate",
-    "name": "Senior Blue Belt",
-    "color": "#2a6fdb",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Jun-Gun",
-        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
-        "korean": "준군",
-        "note": ""
-      },
-      {
-        "name": "Yul-Guk",
-        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
-        "korean": "율곡",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
-      },
-      {
-        "name": "Won-Hyo",
-        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
-        "korean": "원효",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Advanced",
-    "name": "Brown Belt",
-    "color": "#7a4e1e",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Hwa-Rang / Choong-Moo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Hwa-Rang",
-        "meaning": "(31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea.",
-        "korean": "화랑",
-        "note": "",
-        "youtubeUrl": ""
-      },
-      {
-        "name": "Choong-Moo",
-        "meaning": "(31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death.",
-        "korean": "충무",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/y8oOgZvdVFQ"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "advanced",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Advanced",
-    "name": "Senior Brown Belt",
-    "color": "#7a4e1e",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Hwa-Rang / Choong-Moo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Hwa-Rang",
-        "meaning": "(31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea.",
-        "korean": "화랑",
-        "note": ""
-      },
-      {
-        "name": "Choong-Moo",
-        "meaning": "(31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death.",
-        "korean": "충무",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/y8oOgZvdVFQ"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "advanced",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Advanced",
-    "name": "Red Belt",
-    "color": "#c8102e",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Hwa-Rang / Choong-Moo",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Hwa-Rang",
-        "meaning": "(31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea.",
-        "korean": "화랑",
-        "note": ""
-      },
-      {
-        "name": "Choong-Moo",
-        "meaning": "(31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death.",
-        "korean": "충무",
-        "note": "",
-        "youtubeUrl": "https://youtu.be/y8oOgZvdVFQ"
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Advanced",
-    "name": "Senior Red Belt",
-    "color": "#c8102e",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Rotating Form",
-        "type": "rotate"
-      },
-      {
-        "label": "Hwa-Rang / Choong-Moo",
-        "type": "form"
-      }
-    ],
-    "forms": [],
-    "rotation": {
-      "title": "Brown → Red Rotation",
-      "description": "Final rank in the Brown–Red rotation group.",
-      "items": [
-        "Cycle A — Hwa-Rang — (31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea. (화랑)",
-        "Cycle B — Choong-Moo — (31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death. (충무)"
-      ]
-    },
-    "cycleNote": null,
-    "pattern": "intermediate",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See rotating schedule above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "Probationary Black Belt",
-    "color": "#111111",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Gwang-Gae",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Gwang-Gae",
-        "meaning": "(42 movements) — Named after Gwanggaeto the Great, 19th King of Goguryeo, who reclaimed vast Korean territory.",
-        "korean": "광개",
-        "note": "Shared by Probationary and Recommended Black Belt ranks."
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "Recommended Black Belt",
-    "color": "#111111",
-    "meta": "1 cycle · 10 weeks",
-    "tags": [
-      {
-        "label": "Gwang-Gae",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Gwang-Gae",
-        "meaning": "(42 movements) — Named after Gwanggaeto the Great, 19th King of Goguryeo, who reclaimed vast Korean territory.",
-        "korean": "광개",
-        "note": "Shared with Probationary Black Belt."
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "1st Degree Decided Black Belt",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Poe-Eun",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Poe-Eun",
-        "meaning": "Named after scholar Jeong Mong-ju (1337–1392), whose unyielding loyalty to Goryeo was expressed through poetry.",
-        "korean": "포은",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "1st Degree Decided Black Belt Lvl 2.",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Poe-Eun",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Poe-Eun",
-        "meaning": "(36 movements) — Named after scholar Jeong Mong-ju (1337–1392), whose unyielding loyalty to Goryeo was expressed through poetry.",
-        "korean": "포은",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "1st Degree Senior Black Belt",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Gae-Baek",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Gae-Baek",
-        "youtubeUrl": "https://youtu.be/W71l8NPdggw",
-        "meaning": "(44 movements) — Named after General Gae Baek of the Baekje Dynasty (660 CE), known for strict military discipline.",
-        "korean": "개백",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "1st Degree Senior Black Belt Lvl 2.",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Gae-Baek",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Gae-Baek",
-        "youtubeUrl": "https://youtu.be/W71l8NPdggw",
-        "meaning": "(44 movements) — Named after General Gae Baek of the Baekje Dynasty (660 CE), known for strict military discipline.",
-        "korean": "개백",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "2nd Degree Black Belt",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Choong-Jang",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Choong-Jang",
-        "meaning": "(38 movements) — Named after General Kim Duk-Ryong (1567–1596), who led resistance against Japanese forces and died in prison.",
-        "korean": "충장",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "2nd Degree Black Belt Lvl 2.",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Choong-Jang",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Choong-Jang",
-        "meaning": "(38 movements) — Named after General Kim Duk-Ryong (1567–1596), who led resistance against Japanese forces and died in prison.",
-        "korean": "충장",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "2nd Degree Decided Black Belt",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Yoo-Sin",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Yoo-Sin",
-        "meaning": "(69 movements) — Named after General Kim Yoo-Sin, credited with unifying the three kingdoms of Korea under the Silla Dynasty.",
-        "korean": "유신",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "2nd Degree Decided Black Belt Lvl 2.",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Yoo-Sin",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Yoo-Sin",
-        "meaning": "(69 movements) — Named after General Kim Yoo-Sin, credited with unifying the three kingdoms of Korea under the Silla Dynasty.",
-        "korean": "유신",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "2nd Degree Senior Black Belt",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Ul-Ji",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Ul-Ji",
-        "meaning": "(42 movements) — Named after General Ul-Ji Moon Dok, who defeated a Chinese invasion of over 300,000 soldiers during the Koguryo Dynasty.",
-        "korean": "을지",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "2nd Degree Senior Black Belt Lvl 2.",
-    "color": "#111111",
-    "meta": "2 cycles · 20 weeks",
-    "tags": [
-      {
-        "label": "Ul-Ji",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Ul-Ji",
-        "meaning": "(42 movements) — Named after General Ul-Ji Moon Dok, who defeated a Chinese invasion of over 300,000 soldiers during the Koguryo Dynasty.",
-        "korean": "을지",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "3rd Degree Black Belt",
-    "color": "#111111",
-    "meta": "1 year at rank",
-    "tags": [
-      {
-        "label": "Yon-Gae",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Yon-Gae",
-        "meaning": "(51 movements) — Named after Yon Gae Somun, a powerful general of the Koguryo Dynasty who successfully defended Korea against Chinese aggression.",
-        "korean": "연개",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "3rd Degree Decided Black Belt",
-    "color": "#111111",
-    "meta": "1 year at rank",
-    "tags": [
-      {
-        "label": "Juche",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Juche",
-        "meaning": "(45 movements) — Meaning coming soon.",
-        "korean": "주체",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "3rd Degree Senior Black Belt",
-    "color": "#111111",
-    "meta": "1 year at rank",
-    "tags": [
-      {
-        "label": "Ko-Dang",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Ko-Dang",
-        "meaning": "(55 movements) — The pseudonym of patriot Cho Man Ik, who dedicated his life to the independence and education of Korea.",
-        "korean": "고당",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "4th Degree Black Belt",
-    "color": "#111111",
-    "meta": "2 years at rank",
-    "tags": [
-      {
-        "label": "Choi-Yong",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Choi-Yong",
-        "meaning": "(movements coming soon) — Named after General Choi Yong (1316–1388), Premier and Commander-in-Chief of the Koryo Dynasty, known for his loyalty and incorruptibility.",
-        "korean": "최용",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "group": "Black Belt",
-    "name": "4th Degree Senior Black Belt",
-    "color": "#111111",
-    "meta": "2 years at rank",
-    "tags": [
-      {
-        "label": "Tong-Il",
-        "type": "form"
-      }
-    ],
-    "forms": [
-      {
-        "name": "Tong-Il",
-        "meaning": "(67 movements) — Denotes the hope for the reunification of Korea, divided since 1945. The diagram symbolizes people being as one.",
-        "korean": "통일",
-        "note": ""
-      }
-    ],
-    "rotation": null,
-    "cycleNote": null,
-    "pattern": "black",
-    "stripes": {
-      "black": [
-        {
-          "id": "one-step",
-          "cat": "one-step",
-          "label": "Stripe 1 — One-Step",
-          "color": "#1c1c1c",
-          "rot": "form"
-        },
-        {
-          "id": "form",
-          "cat": "form",
-          "label": "Stripe 2 — Form",
-          "color": "#1c1c1c",
-          "rot": "form",
-          "details": [
-            {
-              "title": "Form",
-              "items": [
-                "See form section above"
-              ]
-            }
-          ]
-        }
-      ],
-      "colored": [
-        {
-          "id": "kicks",
-          "cat": "kicks",
-          "label": "Blue Stripe — Kicks",
-          "color": "#2a6fdb",
-          "rot": "form"
-        },
-        {
-          "id": "sparring-combo",
-          "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
-          "color": "#3a9e3a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle — Green Belt & Above",
-              "items": [
-                "#1 Slide sidekick",
-                "Hand fake",
-                "#2 Front kick",
-                "Spin sidekick",
-                "Feint spin kick",
-                "#1 Hook or step behind hook"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "self-defense",
-          "cat": "self-defense",
-          "label": "Red Stripe — Self-Defense",
-          "color": "#c8102e",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Block incoming punch",
-                "Parry to grab",
-                "Under the shoulder grab"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "power-combo",
-          "cat": "power-combo",
-          "label": "Purple Stripe — Power Combo",
-          "color": "#8b3fa8",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "mitt-combo",
-          "cat": "mitt-combo",
-          "label": "Orange Stripe — Mitt Combo",
-          "color": "#f5830a",
-          "rot": "cycle",
-          "details": [
-            {
-              "title": "Current Cycle",
-              "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
-              ]
-            }
-          ]
-        },
-        {
-          "id": "board-breaking",
-          "cat": "board-breaking",
-          "label": "Brown Stripe — Board Breaking",
-          "color": "#7a4e1e",
-          "rot": "fixed",
-          "details": [
-            {
-              "title": "Board Breaking — see Boards tab",
-              "items": [
-                "Board breaking requirements listed in the 🪵 Boards tab"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  }
-];
-
+const BELTS = [
+  {
+    "group": "Beginner",
+    "name": "White Belt",
+    "color": "#f0f0f0",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Ki-Bon",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Ki-Bon",
+        "korean": "기본",
+        "note": "(14 movements) — \"The Basics.\" The foundation form every student learns first.",
+        "youtubeUrl": "https://youtu.be/mOiB-10NcHM"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "white",
+    "stripes": {
+      "black": [
+        {
+          "id": "stances",
+          "cat": "stances",
+          "label": "Stripe 1 — Stances & Commands",
+          "color": "#1c1c1c",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Stances",
+              "items": [
+                "Attention Position",
+                "Ready Position",
+                "Front Stance",
+                "Back Stance",
+                "Sitting Stance"
+              ]
+            },
+            {
+              "title": "Commands",
+              "items": [
+                "Charyot (차렷) — Attention, go to attention position",
+                "Kyungye (경례) — Bow",
+                "Joonbi (준비) — Ready, go from attention to ready position",
+                "Bahrroh (바로) — Back to ready, return from stance to ready position",
+                "Shiop (쉬어) — Rest, left foot returns from ready to attention",
+                "Sijak (시작) — Go / Begin"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "blocks",
+          "cat": "blocks",
+          "label": "Stripe 2 — Blocks",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 3 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 4 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "Ki-Bon — see form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Kicks",
+              "items": [
+                "#1 Side Kick (front leg)",
+                "#1 Front Kick (front leg)",
+                "#2 Front Kick (back leg)",
+                "#1 Round Kick (front leg)",
+                "#2 Round Kick (back leg)",
+                "Inside Crescent Kick",
+                "Outside Crescent Kick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "form"
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Rotating",
+              "items": [
+                "Self defense curriculum rotates with the current cycle"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "optional": true,
+          "opt": true
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "optional": true,
+          "opt": true
+        }
+      ]
+    }
+  },
+  {
+    "group": "Beginner",
+    "name": "Yellow Belt",
+    "color": "#f5c518",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Dan-Gun / Do-San",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Dan-Gun",
+        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
+        "korean": "단군",
+        "note": ""
+      },
+      {
+        "name": "Do-San",
+        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
+        "korean": "도산",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "beginner",
+    "stripes": {
+      "black": [
+        {
+          "id": "stances",
+          "cat": "stances",
+          "label": "Stripe 1 — Stances & Turns",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "blocks",
+          "cat": "blocks",
+          "label": "Stripe 2 — Blocks",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 3 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 4 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Dan-Gun (21 movements)"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "Do-San (24 movements)"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Front kick/round kick combo",
+                "Spin side kick",
+                "Spin crescent kick"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "#3 Front kick",
+                "#3 Side kick",
+                "#3 Round kick",
+                "#2 Hook kick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Combo 1",
+              "items": [
+                "Outer forearm block",
+                "Reverse ridgehand",
+                "#2 Round kick",
+                "Spin side kick"
+              ]
+            },
+            {
+              "title": "Dan-Gun Combo 2",
+              "items": [
+                "Outside block",
+                "Reverse punch",
+                "Hook punch",
+                "#1 Side kick",
+                "Spin crescent kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 1",
+              "items": [
+                "#3 Side kick",
+                "Lead backfist",
+                "Reverse punch",
+                "#2 Hook kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 2",
+              "items": [
+                "#3 Round kick",
+                "#2 Front kick/round kick combo",
+                "Reverse hook punch (#4)",
+                "Lead uppercut (#5)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ],
+          "opt": true
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ],
+          "opt": true
+        }
+      ]
+    }
+  },
+  {
+    "group": "Beginner",
+    "name": "Senior Yellow Belt",
+    "color": "#f5c518",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Dan-Gun / Do-San",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Dan-Gun",
+        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
+        "korean": "단군",
+        "note": ""
+      },
+      {
+        "name": "Do-San",
+        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
+        "korean": "도산",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "beginner",
+    "stripes": {
+      "black": [
+        {
+          "id": "stances",
+          "cat": "stances",
+          "label": "Stripe 1 — Stances & Turns",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "blocks",
+          "cat": "blocks",
+          "label": "Stripe 2 — Blocks",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 3 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 4 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Dan-Gun (21 movements)"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "Do-San (24 movements)"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Front kick/round kick combo",
+                "Spin side kick",
+                "Spin crescent kick",
+                "Slide side kick",
+                "Skip round kick",
+                "#2 Jump round kick"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "#3 Front kick",
+                "#3 Side kick",
+                "#3 Round kick",
+                "#2 Hook kick",
+                "Slide side kick",
+                "Skip round kick",
+                "#2 Jump round kick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Combo 1",
+              "items": [
+                "Outer forearm block",
+                "Reverse ridgehand",
+                "#2 Round kick",
+                "Spin side kick"
+              ]
+            },
+            {
+              "title": "Dan-Gun Combo 2",
+              "items": [
+                "Outside block",
+                "Reverse punch",
+                "Hook punch",
+                "#1 Side kick",
+                "Spin crescent kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 1",
+              "items": [
+                "#3 Side kick",
+                "Lead backfist",
+                "Reverse punch",
+                "#2 Hook kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 2",
+              "items": [
+                "#3 Round kick",
+                "#2 Front kick/round kick combo",
+                "Reverse hook punch (#4)",
+                "Lead uppercut (#5)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Beginner",
+    "name": "Orange Belt",
+    "color": "#f5830a",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Dan-Gun / Do-San",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Dan-Gun",
+        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
+        "korean": "단군",
+        "note": ""
+      },
+      {
+        "name": "Do-San",
+        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
+        "korean": "도산",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "beginner",
+    "stripes": {
+      "black": [
+        {
+          "id": "stances",
+          "cat": "stances",
+          "label": "Stripe 1 — Stances & Turns",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "blocks",
+          "cat": "blocks",
+          "label": "Stripe 2 — Blocks",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 3 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 4 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Dan-Gun (21 movements)"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "Do-San (24 movements)"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Front kick/round kick combo",
+                "Spin side kick",
+                "Spin crescent kick",
+                "Slide side kick",
+                "Skip round kick",
+                "#2 Jump round kick"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "#3 Front kick",
+                "#3 Side kick",
+                "#3 Round kick",
+                "#2 Hook kick",
+                "Slide side kick",
+                "Skip round kick",
+                "#2 Jump round kick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Combo 1",
+              "items": [
+                "Outer forearm block",
+                "Reverse ridgehand",
+                "#2 Round kick",
+                "Spin side kick"
+              ]
+            },
+            {
+              "title": "Dan-Gun Combo 2",
+              "items": [
+                "Outside block",
+                "Reverse punch",
+                "Hook punch",
+                "#1 Side kick",
+                "Spin crescent kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 1",
+              "items": [
+                "#3 Side kick",
+                "Lead backfist",
+                "Reverse punch",
+                "#2 Hook kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 2",
+              "items": [
+                "#3 Round kick",
+                "#2 Front kick/round kick combo",
+                "Reverse hook punch (#4)",
+                "Lead uppercut (#5)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Beginner",
+    "name": "Senior Orange Belt",
+    "color": "#f5830a",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Dan-Gun / Do-San",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Dan-Gun",
+        "meaning": "(21 movements) — Named after the legendary king Dangun, founder of the Gojoseon Dynasty in 2333 BCE.",
+        "korean": "단군",
+        "note": ""
+      },
+      {
+        "name": "Do-San",
+        "meaning": "(24 movements) — Pseudonym of patriot An Changho (1876–1938), devoted his life to Korean education and independence.",
+        "korean": "도산",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/CKoHZpBpYsM"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "beginner",
+    "stripes": {
+      "black": [
+        {
+          "id": "stances",
+          "cat": "stances",
+          "label": "Stripe 1 — Stances & Turns",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "blocks",
+          "cat": "blocks",
+          "label": "Stripe 2 — Blocks",
+          "color": "#1c1c1c",
+          "rot": "fixed"
+        },
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 3 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 4 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Dan-Gun (21 movements)"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "Do-San (24 movements)"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Cycle",
+              "items": [
+                "Front kick/round kick combo",
+                "Spin side kick",
+                "Spin crescent kick",
+                "Slide side kick",
+                "Skip round kick",
+                "#2 Jump round kick"
+              ]
+            },
+            {
+              "title": "Do-San Cycle",
+              "items": [
+                "#3 Front kick",
+                "#3 Side kick",
+                "#3 Round kick",
+                "#2 Hook kick",
+                "Slide side kick",
+                "Skip round kick",
+                "#2 Jump round kick"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Dan-Gun Combo 1",
+              "items": [
+                "Outer forearm block",
+                "Reverse ridgehand",
+                "#2 Round kick",
+                "Spin side kick"
+              ]
+            },
+            {
+              "title": "Dan-Gun Combo 2",
+              "items": [
+                "Outside block",
+                "Reverse punch",
+                "Hook punch",
+                "#1 Side kick",
+                "Spin crescent kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 1",
+              "items": [
+                "#3 Side kick",
+                "Lead backfist",
+                "Reverse punch",
+                "#2 Hook kick"
+              ]
+            },
+            {
+              "title": "Do-San Combo 2",
+              "items": [
+                "#3 Round kick",
+                "#2 Front kick/round kick combo",
+                "Reverse hook punch (#4)",
+                "Lead uppercut (#5)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Intermediate",
+    "name": "Green Belt",
+    "color": "#3a9e3a",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Jun-Gun",
+        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
+        "korean": "준군",
+        "note": ""
+      },
+      {
+        "name": "Yul-Guk",
+        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
+        "korean": "율곡",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
+      },
+      {
+        "name": "Won-Hyo",
+        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
+        "korean": "원효",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Intermediate",
+    "name": "Senior Green Belt",
+    "color": "#3a9e3a",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Jun-Gun",
+        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
+        "korean": "준군",
+        "note": ""
+      },
+      {
+        "name": "Yul-Guk",
+        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
+        "korean": "율곡",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
+      },
+      {
+        "name": "Won-Hyo",
+        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
+        "korean": "원효",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Intermediate",
+    "name": "Purple Belt",
+    "color": "#8b3fa8",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Jun-Gun",
+        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
+        "korean": "준군",
+        "note": ""
+      },
+      {
+        "name": "Yul-Guk",
+        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
+        "korean": "율곡",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
+      },
+      {
+        "name": "Won-Hyo",
+        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
+        "korean": "원효",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Intermediate",
+    "name": "Senior Purple Belt",
+    "color": "#8b3fa8",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Jun-Gun",
+        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
+        "korean": "준군",
+        "note": ""
+      },
+      {
+        "name": "Yul-Guk",
+        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
+        "korean": "율곡",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
+      },
+      {
+        "name": "Won-Hyo",
+        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
+        "korean": "원효",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Intermediate",
+    "name": "Blue Belt",
+    "color": "#2a6fdb",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Jun-Gun",
+        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
+        "korean": "준군",
+        "note": ""
+      },
+      {
+        "name": "Yul-Guk",
+        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
+        "korean": "율곡",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
+      },
+      {
+        "name": "Won-Hyo",
+        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
+        "korean": "원효",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Intermediate",
+    "name": "Senior Blue Belt",
+    "color": "#2a6fdb",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Jun-Gun / Yul-Guk / Won-Hyo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Jun-Gun",
+        "meaning": "(32 movements) — Named after An Junggeun, who stood against Japanese occupation and was executed in 1910.",
+        "korean": "준군",
+        "note": ""
+      },
+      {
+        "name": "Yul-Guk",
+        "meaning": "(36 movements) — Pseudonym of philosopher Yi Yi (1536–1584), the \"Confucius of Korea.\"",
+        "korean": "율곡",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/8QRUCsxAVRA"
+      },
+      {
+        "name": "Won-Hyo",
+        "meaning": "(27 movements) — A monk and writer (617–686) who brought Buddhist teachings to the Silla Dynasty.",
+        "korean": "원효",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Advanced",
+    "name": "Brown Belt",
+    "color": "#7a4e1e",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Hwa-Rang / Choong-Moo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Hwa-Rang",
+        "meaning": "(31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea.",
+        "korean": "화랑",
+        "note": "",
+        "youtubeUrl": ""
+      },
+      {
+        "name": "Choong-Moo",
+        "meaning": "(31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death.",
+        "korean": "충무",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/y8oOgZvdVFQ"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "advanced",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Advanced",
+    "name": "Senior Brown Belt",
+    "color": "#7a4e1e",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Hwa-Rang / Choong-Moo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Hwa-Rang",
+        "meaning": "(31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea.",
+        "korean": "화랑",
+        "note": ""
+      },
+      {
+        "name": "Choong-Moo",
+        "meaning": "(31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death.",
+        "korean": "충무",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/y8oOgZvdVFQ"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "advanced",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Advanced",
+    "name": "Red Belt",
+    "color": "#c8102e",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Hwa-Rang / Choong-Moo",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Hwa-Rang",
+        "meaning": "(31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea.",
+        "korean": "화랑",
+        "note": ""
+      },
+      {
+        "name": "Choong-Moo",
+        "meaning": "(31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death.",
+        "korean": "충무",
+        "note": "",
+        "youtubeUrl": "https://youtu.be/y8oOgZvdVFQ"
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Advanced",
+    "name": "Senior Red Belt",
+    "color": "#c8102e",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Rotating Form",
+        "type": "rotate"
+      },
+      {
+        "label": "Hwa-Rang / Choong-Moo",
+        "type": "form"
+      }
+    ],
+    "forms": [],
+    "rotation": {
+      "title": "Brown → Red Rotation",
+      "description": "Final rank in the Brown–Red rotation group.",
+      "items": [
+        "Cycle A — Hwa-Rang — (31 movements) — Named after the Hwarang youth group whose teachings helped unify the three kingdoms of Korea. (화랑)",
+        "Cycle B — Choong-Moo — (31 movements) — Named after Admiral Yi Sunsin, inventor of the first armored battleship. Ends left-hand to symbolize his untimely death. (충무)"
+      ]
+    },
+    "cycleNote": null,
+    "pattern": "intermediate",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See rotating schedule above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "Probationary Black Belt",
+    "color": "#111111",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Gwang-Gae",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Gwang-Gae",
+        "meaning": "(42 movements) — Named after Gwanggaeto the Great, 19th King of Goguryeo, who reclaimed vast Korean territory.",
+        "korean": "광개",
+        "note": "Shared by Probationary and Recommended Black Belt ranks."
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "Recommended Black Belt",
+    "color": "#111111",
+    "meta": "1 cycle · 10 weeks",
+    "tags": [
+      {
+        "label": "Gwang-Gae",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Gwang-Gae",
+        "meaning": "(42 movements) — Named after Gwanggaeto the Great, 19th King of Goguryeo, who reclaimed vast Korean territory.",
+        "korean": "광개",
+        "note": "Shared with Probationary Black Belt."
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "1st Degree Decided Black Belt",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Poe-Eun",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Poe-Eun",
+        "meaning": "Named after scholar Jeong Mong-ju (1337–1392), whose unyielding loyalty to Goryeo was expressed through poetry.",
+        "korean": "포은",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "1st Degree Decided Black Belt Lvl 2.",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Poe-Eun",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Poe-Eun",
+        "meaning": "(36 movements) — Named after scholar Jeong Mong-ju (1337–1392), whose unyielding loyalty to Goryeo was expressed through poetry.",
+        "korean": "포은",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "1st Degree Senior Black Belt",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Gae-Baek",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Gae-Baek",
+        "youtubeUrl": "https://youtu.be/W71l8NPdggw",
+        "meaning": "(44 movements) — Named after General Gae Baek of the Baekje Dynasty (660 CE), known for strict military discipline.",
+        "korean": "개백",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "1st Degree Senior Black Belt Lvl 2.",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Gae-Baek",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Gae-Baek",
+        "youtubeUrl": "https://youtu.be/W71l8NPdggw",
+        "meaning": "(44 movements) — Named after General Gae Baek of the Baekje Dynasty (660 CE), known for strict military discipline.",
+        "korean": "개백",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "2nd Degree Black Belt",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Choong-Jang",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Choong-Jang",
+        "meaning": "(38 movements) — Named after General Kim Duk-Ryong (1567–1596), who led resistance against Japanese forces and died in prison.",
+        "korean": "충장",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "2nd Degree Black Belt Lvl 2.",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Choong-Jang",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Choong-Jang",
+        "meaning": "(38 movements) — Named after General Kim Duk-Ryong (1567–1596), who led resistance against Japanese forces and died in prison.",
+        "korean": "충장",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "2nd Degree Decided Black Belt",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Yoo-Sin",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Yoo-Sin",
+        "meaning": "(69 movements) — Named after General Kim Yoo-Sin, credited with unifying the three kingdoms of Korea under the Silla Dynasty.",
+        "korean": "유신",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "2nd Degree Decided Black Belt Lvl 2.",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Yoo-Sin",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Yoo-Sin",
+        "meaning": "(69 movements) — Named after General Kim Yoo-Sin, credited with unifying the three kingdoms of Korea under the Silla Dynasty.",
+        "korean": "유신",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "2nd Degree Senior Black Belt",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Ul-Ji",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Ul-Ji",
+        "meaning": "(42 movements) — Named after General Ul-Ji Moon Dok, who defeated a Chinese invasion of over 300,000 soldiers during the Koguryo Dynasty.",
+        "korean": "을지",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "2nd Degree Senior Black Belt Lvl 2.",
+    "color": "#111111",
+    "meta": "2 cycles · 20 weeks",
+    "tags": [
+      {
+        "label": "Ul-Ji",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Ul-Ji",
+        "meaning": "(42 movements) — Named after General Ul-Ji Moon Dok, who defeated a Chinese invasion of over 300,000 soldiers during the Koguryo Dynasty.",
+        "korean": "을지",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "3rd Degree Black Belt",
+    "color": "#111111",
+    "meta": "1 year at rank",
+    "tags": [
+      {
+        "label": "Yon-Gae",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Yon-Gae",
+        "meaning": "(51 movements) — Named after Yon Gae Somun, a powerful general of the Koguryo Dynasty who successfully defended Korea against Chinese aggression.",
+        "korean": "연개",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "3rd Degree Decided Black Belt",
+    "color": "#111111",
+    "meta": "1 year at rank",
+    "tags": [
+      {
+        "label": "Juche",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Juche",
+        "meaning": "(45 movements) — Meaning coming soon.",
+        "korean": "주체",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "3rd Degree Senior Black Belt",
+    "color": "#111111",
+    "meta": "1 year at rank",
+    "tags": [
+      {
+        "label": "Ko-Dang",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Ko-Dang",
+        "meaning": "(55 movements) — The pseudonym of patriot Cho Man Ik, who dedicated his life to the independence and education of Korea.",
+        "korean": "고당",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "4th Degree Black Belt",
+    "color": "#111111",
+    "meta": "2 years at rank",
+    "tags": [
+      {
+        "label": "Choi-Yong",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Choi-Yong",
+        "meaning": "(movements coming soon) — Named after General Choi Yong (1316–1388), Premier and Commander-in-Chief of the Koryo Dynasty, known for his loyalty and incorruptibility.",
+        "korean": "최용",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "group": "Black Belt",
+    "name": "4th Degree Senior Black Belt",
+    "color": "#111111",
+    "meta": "2 years at rank",
+    "tags": [
+      {
+        "label": "Tong-Il",
+        "type": "form"
+      }
+    ],
+    "forms": [
+      {
+        "name": "Tong-Il",
+        "meaning": "(67 movements) — Denotes the hope for the reunification of Korea, divided since 1945. The diagram symbolizes people being as one.",
+        "korean": "통일",
+        "note": ""
+      }
+    ],
+    "rotation": null,
+    "cycleNote": null,
+    "pattern": "black",
+    "stripes": {
+      "black": [
+        {
+          "id": "one-step",
+          "cat": "one-step",
+          "label": "Stripe 1 — One-Step",
+          "color": "#1c1c1c",
+          "rot": "form"
+        },
+        {
+          "id": "form",
+          "cat": "form",
+          "label": "Stripe 2 — Form",
+          "color": "#1c1c1c",
+          "rot": "form",
+          "details": [
+            {
+              "title": "Form",
+              "items": [
+                "See form section above"
+              ]
+            }
+          ]
+        }
+      ],
+      "colored": [
+        {
+          "id": "kicks",
+          "cat": "kicks",
+          "label": "Blue Stripe — Kicks",
+          "color": "#2a6fdb",
+          "rot": "form"
+        },
+        {
+          "id": "sparring-combo",
+          "cat": "sparring-combo",
+          "label": "Green Stripe — Sparring Combinations",
+          "color": "#3a9e3a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle — Green Belt & Above",
+              "items": [
+                "#1 Slide sidekick",
+                "Hand fake",
+                "#2 Front kick",
+                "Spin sidekick",
+                "Feint spin kick",
+                "#1 Hook or step behind hook"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "self-defense",
+          "cat": "self-defense",
+          "label": "Red Stripe — Self-Defense",
+          "color": "#c8102e",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Block incoming punch",
+                "Parry to grab",
+                "Under the shoulder grab"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "power-combo",
+          "cat": "power-combo",
+          "label": "Purple Stripe — Power Combo",
+          "color": "#8b3fa8",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Skipping roundhouse",
+                "Reverse punch (#2)",
+                "Roundhouse"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mitt-combo",
+          "cat": "mitt-combo",
+          "label": "Orange Stripe — Mitt Combo",
+          "color": "#f5830a",
+          "rot": "cycle",
+          "details": [
+            {
+              "title": "Current Cycle",
+              "items": [
+                "Jab",
+                "Slip (#1 slip #3) — slip to left side",
+                "Hook punch"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "board-breaking",
+          "cat": "board-breaking",
+          "label": "Brown Stripe — Board Breaking",
+          "color": "#7a4e1e",
+          "rot": "fixed",
+          "details": [
+            {
+              "title": "Board Breaking — see Boards tab",
+              "items": [
+                "Board breaking requirements listed in the 🪵 Boards tab"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+];
+
 /* ── current curriculum for a stripe ────────────────────────────────────
  * Spec sections 7 and 9: a stripe keeps a permanent identity while its
  * CONTENT rotates. Blue always means Kicks; which kicks depends on the
