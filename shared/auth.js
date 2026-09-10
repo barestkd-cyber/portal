@@ -180,17 +180,31 @@
   // ── Portal hand-off ──────────────────────────────────────────────────────
 
   // pickupSessionFromURL() -> Promise<boolean>
-  //   When the portal launches an app it appends ?token=<access>&refresh=<refresh>.
-  //   This adopts that session, strips the params from the URL, and resolves
-  //   true. Resolves false when no such params are present.
+  //   When the portal launches an app it appends #token=<access>&refresh=<refresh>
+  //   - the fragment, which a browser never sends to a server. It used to be
+  //   ?token=&refresh= in the query string, which every request carried to
+  //   the host and its logs (audit A19). The query form is still READ so a
+  //   portal page cached from before the change keeps working, but it is never
+  //   written any more.
+  //
+  //   The URL is cleaned FIRST, synchronously, before anything is awaited. It
+  //   used to be cleaned only after setSession resolved, so a failure left both
+  //   tokens in the address bar and in the browser history.
   async function pickupSessionFromURL() {
-    var params = new URLSearchParams(window.location.search);
-    var token = params.get('token');
-    var refresh = params.get('refresh');
+    var hash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    var query = new URLSearchParams(window.location.search);
+    var token = hash.get('token') || query.get('token');
+    var refresh = hash.get('refresh') || query.get('refresh');
     if (!token || !refresh) return false;
-    await sb.auth.setSession({ access_token: token, refresh_token: refresh });
-    window.history.replaceState({}, document.title, window.location.pathname);
-    return true;
+    query.delete('token'); query.delete('refresh');
+    var rest = query.toString();
+    window.history.replaceState({}, document.title, window.location.pathname + (rest ? '?' + rest : ''));
+    try {
+      var res = await sb.auth.setSession({ access_token: token, refresh_token: refresh });
+      return !(res && res.error);
+    } catch (e) {
+      return false;
+    }
   }
 
   // ── Idle logout ──────────────────────────────────────────────────────────

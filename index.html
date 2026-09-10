@@ -799,8 +799,19 @@ async function openApp(url){
   if(url === '#') return;
   const {data} = await sb.auth.getSession();
   const session = data?.session;
-  if(session?.access_token && session?.refresh_token){
-    url = url + '?token=' + session.access_token + '&refresh=' + session.refresh_token;
+  // The FRAGMENT, never the query string. A browser sends ?query to the
+  // server with the request - GitHub Pages, its CDN and anything logging
+  // requests all see it - and puts it in the Referer of the next link
+  // clicked. The refresh token is long-lived: whoever holds it can mint
+  // sessions. A #fragment never leaves the browser (audit A19).
+  //
+  // And only to our own apps. The external tools are plain links today, but
+  // an app added to this list later must not be handed a session by
+  // default.
+  const ours = /^https:\/\/[a-z0-9-]+\.barestkd\.fit(\/|$)/i.test(url);
+  if(ours && session?.access_token && session?.refresh_token){
+    url = url + '#token=' + encodeURIComponent(session.access_token)
+              + '&refresh=' + encodeURIComponent(session.refresh_token);
   }
   window.open(url, '_blank');
 }
