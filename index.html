@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
 <title>Bares TKD Portal</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -758,9 +759,12 @@ async function doSignup(){
   });
 
   err.style.color = '#2ecc71';
-  err.textContent = 'Account created! You can now log in.';
+  // With email confirmation on, there is no session until the emailed link is clicked.
+  err.textContent = data.session
+    ? 'Account created! You can now log in.'
+    : 'Account created. Check your email to confirm it, then log in.';
   err.style.display = 'block';
-  setTimeout(hideSignup, 2000);
+  setTimeout(hideSignup, data.session ? 2000 : 6000);
 }
 
 // ── LOAD PORTAL ──
