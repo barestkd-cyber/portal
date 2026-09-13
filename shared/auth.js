@@ -121,9 +121,18 @@
     return { user: res.data.user, error: null, code: null };
   }
 
-  // Clears the current session everywhere on this origin.
+  // Signs this person out on every device - supabase-js signs out everywhere
+  // by default. For the Sign Out buttons; the idle timer uses signOutHere.
   async function signOut() {
     await sb.auth.signOut();
+    _role = null;
+  }
+
+  // Signs out THIS device only, for the idle timer. A tab left open on
+  // another screen running out its clock must not end the sign-in on the
+  // phone in someone's hand, which the default scope would do.
+  async function signOutHere() {
+    try { await sb.auth.signOut({ scope: 'local' }); } catch (e) {}
     _role = null;
   }
 
@@ -262,7 +271,7 @@
       if (idleMs >= limitMs) {
         clearInterval(_idleTimer);
         try { localStorage.removeItem(IDLE_KEY); } catch (e) {}
-        await signOut();
+        await signOutHere();
         if (onLogout) onLogout();
         else location.reload();
         return;
