@@ -138,7 +138,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "form"
         },
@@ -286,7 +286,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "form",
           "details": [
@@ -499,7 +499,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "form",
           "details": [
@@ -710,7 +710,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "form",
           "details": [
@@ -921,7 +921,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "form",
           "details": [
@@ -1093,7 +1093,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -1239,7 +1239,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -1385,7 +1385,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -1531,7 +1531,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -1677,7 +1677,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -1823,7 +1823,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -1964,7 +1964,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2119,7 +2119,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2274,7 +2274,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2422,7 +2422,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2566,7 +2566,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2710,7 +2710,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2854,7 +2854,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -2998,7 +2998,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -3143,7 +3143,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -3288,7 +3288,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -3432,7 +3432,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -3576,7 +3576,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -3720,7 +3720,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -3864,7 +3864,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4008,7 +4008,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4152,7 +4152,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4296,7 +4296,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4440,7 +4440,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4584,7 +4584,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4728,7 +4728,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -4872,7 +4872,7 @@ const BELTS = [
         {
           "id": "sparring-combo",
           "cat": "sparring-combo",
-          "label": "Green Stripe — Sparring Combinations",
+          "label": "Green Stripe — Sparring Proficiency",
           "color": "#3a9e3a",
           "rot": "cycle",
           "details": [
@@ -5027,7 +5027,7 @@ function getStripeId(stripe, beltName){
   if (L.indexOf('self defense') >= 0 || L.indexOf('self-defense') >= 0) return 'self-defense';
   if (L.indexOf('power combo') >= 0)    return 'power-combo';
   if (L.indexOf('mitt combo') >= 0)     return 'mitt-combo';
-  if (L.indexOf('sparring combo') >= 0) return 'sparring-combo';
+  if (L.indexOf('sparring combo') >= 0 || L.indexOf('sparring proficiency') >= 0) return 'sparring-combo';
   if (L.indexOf('board breaking') >= 0) return 'board-breaking';
   if (L.indexOf('one step #1') >= 0)    return 'one-step-1';
   if (L.indexOf('one step #2') >= 0)    return 'one-step-2';
