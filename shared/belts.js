@@ -574,7 +574,9 @@ const BELTS = [
                 "Roundhouse"
               ]
             }
-          ]
+          ],
+          "optional": true,
+          "opt": true
         },
         {
           "id": "mitt-combo",
@@ -591,7 +593,9 @@ const BELTS = [
                 "Hook punch"
               ]
             }
-          ]
+          ],
+          "optional": true,
+          "opt": true
         }
       ]
     }
