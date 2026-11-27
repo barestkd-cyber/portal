@@ -356,9 +356,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ],
@@ -374,9 +378,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ],
@@ -569,9 +575,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ],
@@ -588,9 +598,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ],
@@ -784,9 +796,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -801,9 +817,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -995,9 +1013,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1012,9 +1034,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -1141,9 +1165,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1158,9 +1186,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -1287,9 +1317,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1304,9 +1338,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -1433,9 +1469,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1450,9 +1490,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -1579,9 +1621,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1596,9 +1642,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -1725,9 +1773,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1742,9 +1794,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -1871,9 +1925,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -1888,9 +1946,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2012,9 +2072,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2029,9 +2093,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2167,9 +2233,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2184,9 +2254,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2322,9 +2394,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2339,9 +2415,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2470,9 +2548,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2487,9 +2569,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2614,9 +2698,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2631,9 +2719,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2758,9 +2848,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2775,9 +2869,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -2902,9 +2998,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -2919,9 +3019,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3046,9 +3148,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3063,9 +3169,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3191,9 +3299,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3208,9 +3320,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3336,9 +3450,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3353,9 +3471,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3480,9 +3600,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3497,9 +3621,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3624,9 +3750,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3641,9 +3771,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3768,9 +3900,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3785,9 +3921,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -3912,9 +4050,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -3929,9 +4071,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4056,9 +4200,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4073,9 +4221,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4200,9 +4350,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4217,9 +4371,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4344,9 +4500,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4361,9 +4521,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4488,9 +4650,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4505,9 +4671,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4632,9 +4800,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4649,9 +4821,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4776,9 +4950,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4793,9 +4971,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
@@ -4920,9 +5100,13 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Skipping roundhouse",
-                "Reverse punch (#2)",
-                "Roundhouse"
+                "1, 2",
+                "Switch kick",
+                "(L) knee",
+                "2",
+                "Parry/pivot",
+                "Feint right round",
+                "(R) round kick"
               ]
             }
           ]
@@ -4937,9 +5121,11 @@ const BELTS = [
             {
               "title": "Current Cycle",
               "items": [
-                "Jab",
-                "Slip (#1 slip #3) — slip to left side",
-                "Hook punch"
+                "1, 2, 3, 2",
+                "Cover (right cover for left hook)",
+                "3, 2, 3",
+                "Cover (left cover for straight punch)",
+                "2, 3, 2"
               ]
             }
           ]
